@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Android Profiler Demo</string>
+    <string name="activity_name_high_memory_usage">High Memory Usage</string>
+    <string name="activity_name_high_memory_usage_description">This Activity creates a hugh amount of View object and thus consume a hugh amount of Memory. \n Observe the memory usage in the Memory Profiler</string>
+    <string name="activity_name_extensive_gc">Extensive GCs</string>
+    <string name="btn_click_to_start">Click here to start</string>
+</resources>
