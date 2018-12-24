@@ -33,8 +33,8 @@ class NumerousGCActivity: AppCompatActivity() {
     private fun setupRecyclerView() {
         val numbers = arrayOfNulls<Int>(NO_OF_TEXTVIEWS_ADDED).mapIndexed { index, _ -> index }
         recyclerView.layoutManager = LinearLayoutManager(this)
-        //recyclerView.adapter = NumerousGCRecyclerViewAdapter(numbers)
-        recyclerView.adapter = LessNumerousGCRecyclerViewAdapter(this,numbers)
+        recyclerView.adapter = NumerousGCRecyclerViewAdapter(numbers)
+        //recyclerView.adapter = LessNumerousGCRecyclerViewAdapter(this,numbers)
     }
 }
 
