@@ -33,6 +33,8 @@ class MainActivity : AppCompatActivity() {
                 getString(R.string.activity_name_high_memory_usage),
                 HighMemoryUsageActivity::class.java
             ),
+            Option(getString(R.string.activity_name_low_memory_usage_recyclerview),
+                LowMemoryUsageWithRecyclerViewActivity::class.java),
             Option(
                 getString(R.string.activity_name_extensive_gc),
                 ExtensiveGCActivity::class.java
@@ -46,8 +48,7 @@ class MainActivity : AppCompatActivity() {
 data class Option(val name: String, val clazz: Class<out Activity>)
 
 class OptionRecyclerViewAdapter(private val options: Array<Option>) : RecyclerView.Adapter<OptionViewHolder>() {
-    override fun onCreateViewHolder(parent: ViewGroup, position: Int): OptionViewHolder {
-
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): OptionViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(android.R.layout.simple_list_item_1, parent, false)
         return OptionViewHolder(view)

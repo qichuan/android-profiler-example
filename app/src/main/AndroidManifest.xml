@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".HighMemoryUsageActivity"/>
+        <activity android:name=".LowMemoryUsageWithRecyclerViewActivity" />
         <activity android:name=".ExtensiveGCActivity"/>
     </application>
 

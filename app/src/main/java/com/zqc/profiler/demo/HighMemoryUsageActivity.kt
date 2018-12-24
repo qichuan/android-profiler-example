@@ -10,11 +10,11 @@ import java.util.*
 
 /***
  * In order to stress the memory usage,
- * this activity creates 10000 rows of TextView when user tabs on the FAB
+ * this activity creates 100000 rows of TextView when user clicks on the start button
  */
 class HighMemoryUsageActivity : AppCompatActivity() {
 
-    val NO_OF_TEXTVIEWS_ADDED = 10000
+    val NO_OF_TEXTVIEWS_ADDED = 100000
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
