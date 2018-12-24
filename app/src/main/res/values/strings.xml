@@ -4,6 +4,6 @@
     <string name="activity_name_high_memory_usage_description">This Activity creates a hugh amount of View objects and thus consume a hugh amount of Memory. \nObserve the memory usage in the Memory Profiler</string>
     <string name="activity_name_low_memory_usage_recyclerview">Low Memory Usage With RecyclerView</string>
     <string name="activity_name_low_memory_usage_description">This Activity uses RecyclerView to present a hugh amount of View objects \nObserve the memory usage in the Memory Profiler</string>
-    <string name="activity_name_extensive_gc">Extensive GCs</string>
+    <string name="activity_name_numerous_gc">Numerous GCs</string>
     <string name="btn_click_to_start">Click here to start</string>
 </resources>

@@ -37,17 +37,14 @@ class LowMemoryUsageWithRecyclerViewActivity : AppCompatActivity() {
     }
 
     private fun setupRecyclerView() {
-        val numbers = arrayOfNulls<Int>(NO_OF_TEXTVIEWS_ADDED)
-        for (i in 0 until NO_OF_TEXTVIEWS_ADDED) {
-            numbers[i] = i
-        }
+        val numbers = arrayOfNulls<Int>(NO_OF_TEXTVIEWS_ADDED).mapIndexed { index, _ -> index }
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = MyRecyclerViewAdapter(numbers)
     }
 
 }
 
-class MyRecyclerViewAdapter(private val numbers: Array<Int?>): RecyclerView.Adapter<MyViewHolder>() {
+class MyRecyclerViewAdapter(private val numbers: List<Int>): RecyclerView.Adapter<MyViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val textView = TextView(parent.context)
         val textViewParams = LinearLayout.LayoutParams(

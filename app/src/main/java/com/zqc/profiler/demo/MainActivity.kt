@@ -36,8 +36,8 @@ class MainActivity : AppCompatActivity() {
             Option(getString(R.string.activity_name_low_memory_usage_recyclerview),
                 LowMemoryUsageWithRecyclerViewActivity::class.java),
             Option(
-                getString(R.string.activity_name_extensive_gc),
-                ExtensiveGCActivity::class.java
+                getString(R.string.activity_name_numerous_gc),
+                NumerousGCActivity::class.java
             )
         )
         recyclerView.adapter = OptionRecyclerViewAdapter(optionList)
